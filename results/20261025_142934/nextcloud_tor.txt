@@ -1,0 +1,8 @@
+WARN: you enabled following architectures: amd64 i386 but you have installed libtorsocks only for those archs: amd64. The best what you can do is to install libtorsocks for all enabled architectures. If you run torsocks with an executable from a missing architecture, the connections went directly into the internet and are NOT redirected via Tor.
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              01792898974 ERROR torsocks[1301798]: Unable to resolve. Status reply: 4 (in socks5_recv_resolve_reply() at socks5.c:677)
+* Could not resolve host: nextcloud.bastionestate.com
+* Store negative name resolve for nextcloud.bastionestate.com:443
+* shutting down connection #0
+curl: (6) Could not resolve host: nextcloud.bastionestate.com

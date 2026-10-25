@@ -1,0 +1,7 @@
+=== Testing nextcloud.bastionestate.com ===
+---
+[DIRECT]
+
+===
+
+[TOR via torsocks]
