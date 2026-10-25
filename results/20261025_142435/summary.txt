@@ -1,0 +1,14 @@
+=== Testing kara.lan.bastionestate.com ===
+---
+[DIRECT - NAT Reflection / Local]
+
+===
+
+[TOR via torsocks]
+
+===
+
+[TOR via proxychains4]
+
+===DONE===
+

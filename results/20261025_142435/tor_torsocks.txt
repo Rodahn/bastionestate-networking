@@ -1,0 +1,13 @@
+WARN: you enabled following architectures: amd64 i386 but you have installed libtorsocks only for those archs: amd64. The best what you can do is to install libtorsocks for all enabled architectures. If you run torsocks with an executable from a missing architecture, the connections went directly into the internet and are NOT redirected via Tor.
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0* Host kara.lan.bastionestate.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 95.82.0.62
+*   Trying 95.82.0.62:443...
+1792898678 ERROR torsocks[1300788]: General SOCKS server failure (in socks5_recv_connect_reply() at socks5.c:527)
+* Immediate connect fail for 95.82.0.62: Connection refused
+* Failed to connect to kara.lan.bastionestate.com port 443 after 2340 ms: Could not connect to server
+  0      0   0      0   0      0      0      0           00:02              0
+* closing connection #0
+curl: (7) Failed to connect to kara.lan.bastionestate.com port 443 after 2340 ms: Could not connect to server

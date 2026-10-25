@@ -1,0 +1,121 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0* Host kara.lan.bastionestate.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 192.168.8.2
+*   Trying 192.168.8.2:443...
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1581 bytes data]
+* SSL Trust Anchors:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+*   CApath: /etc/ssl/certs
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [10 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [3480 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [111 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / x25519 / id-ecPublicKey
+* ALPN: server did not agree on a protocol. Uses default.
+* Server certificate:
+*   subject: CN=*.bastionestate.com
+*   start date: Sep 22 14:38:51 2026 GMT
+*   expire date: Dec 21 14:38:50 2026 GMT
+*   issuer: C=US; O=Let's Encrypt; CN=YE1
+*   Certificate level 0: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 1: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 2: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using ecdsa-with-SHA384
+*   Certificate level 3: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using ecdsa-with-SHA384
+*   subjectAltName: "kara.lan.bastionestate.com" matches cert's "*.lan.bastionestate.com"
+* SSL certificate verified via OpenSSL.
+* Established connection to kara.lan.bastionestate.com (192.168.8.2 port 443) from 192.168.8.205 port 44354 
+* using HTTP/1.x
+} [5 bytes data]
+> GET / HTTP/1.1
+> Host: kara.lan.bastionestate.com
+> User-Agent: curl/8.18.0
+> Accept: */*
+> 
+* Request completely sent off
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [265 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [265 bytes data]
+< HTTP/1.1 200 OK
+< cache-control: max-age=0
+< date: Sun, 25 Oct 2026 03:24:36 GMT
+< pragma: no-cache
+< server: pve-api-daemon/3.0
+< content-length: 2505
+< content-type: text/html; charset=utf-8
+< expires: Sun, 25 Oct 2026 03:24:36 GMT
+< 
+{ [2505 bytes data]
+100   2505 100   2505   0      0  90826      0                              0100   2505 100   2505   0      0  90688      0                              0100   2505 100   2505   0      0  90547      0                              0
+* Connection #0 to host kara.lan.bastionestate.com:443 left intact
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>kara - Proxmox Virtual Environment</title>
+    <link rel="icon" sizes="128x128" href="/pve2/images/logo-128.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="/pve2/images/logo-128.png" />
+    <link rel="stylesheet" type="text/css" href="/pve2/ext6/theme-crisp/resources/theme-crisp-all.css?ver=7.0.0" />
+    <link rel="stylesheet" type="text/css" href="/pve2/ext6/crisp/resources/charts-all.css?ver=7.0.0" />
+    <link rel="stylesheet" type="text/css" href="/pve2/fa/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="/pve2/font-logos/css/font-logos.css" />
+    <link rel="stylesheet" type="text/css" href="/pve2/css/ext6-pve.css?ver=8.4.19" />
+    <link rel="stylesheet" type="text/css" href="/pwt/css/ext6-pmx.css?ver=v4.3.17-t1775819830" />
+    <link rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" href="/pwt/themes/theme-proxmox-dark.css?ver=v4.3.17-t1775819830" />
+    
+    <script type='text/javascript'>function gettext(buf) { return buf; }</script>
+    
+    <script type="text/javascript" src="/pve2/ext6/ext-all.js?ver=7.0.0"></script>
+    <script type="text/javascript" src="/pve2/ext6/charts.js?ver=7.0.0"></script>
+    
+    <script type="text/javascript" src="/pve2/js/u2f-api.js"></script>
+    <script type="text/javascript" src="/qrcode.min.js"></script>
+    <script type="text/javascript">
+    Proxmox = {
+	Setup: { auth_cookie_name: 'PVEAuthCookie' },
+	defaultLang: 'en',
+	NodeName: 'kara',
+	UserName: '',
+	CSRFPreventionToken: 'null',
+	ConsentText: ''
+    };
+    </script>
+    <script type="text/javascript" src="/proxmoxlib.js?ver=v4.3.17-t1775819830"></script>
+    <script type="text/javascript" src="/pve2/js/pvemanagerlib.js?ver=8.4.19"></script>
+    <script type="text/javascript" src="/pve2/ext6/locale/locale-en.js?ver=7.0.0"></script>
+
+    <script type="text/javascript">
+    if (typeof(PVE) === 'undefined') PVE = {};
+    Ext.History.fieldid = 'x-history-field';
+    Ext.onReady(function() { Ext.create('PVE.StdWorkspace');});
+    </script>
+
+  </head>
+  <body>
+    <!-- Fields required for history management -->
+    <form id="history-form" class="x-hidden">
+    <input type="hidden" id="x-history-field"/>
+    </form>
+  </body>
+</html>
